@@ -1,2 +1,3 @@
 name: Isaiah Gem Harrison
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
