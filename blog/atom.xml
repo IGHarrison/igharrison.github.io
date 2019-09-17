@@ -1,0 +1,27 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Blog</title>
+  <link href="http://igharrison.github.io/blog/atom.xml" rel="self"/>
+  <link href="http://igharrison.github.io/blog"/>
+  <update>{{ sitetime | date_toxmlschema }}</update>
+  <id>http://igharrison.github.io/blog</id>
+  <author>
+    <name>Isaiah Gem Harrison</name>
+    <email>isaiahgem@gmail.com</email>
+  </author>
+  
+  (% for post in site.posts %)
+    <entry>
+      <title>{{ post.title }}</title>
+      <link href="http://igharrison.github.io{{ post.url }}"/>
+      <update>{{ post.date | date_to_xmlschema }}</update>
+      <id>http://igharrison.github.io{{ post.id }}</id>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+  (% endfor %)
+  
+</feed>
