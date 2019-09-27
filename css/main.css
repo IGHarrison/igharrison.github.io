@@ -54,6 +54,6 @@ ul.posts li {
   list-style: none;
 }
 
-.blurb {
+.blurb, #about {
   clear: right;
 }
