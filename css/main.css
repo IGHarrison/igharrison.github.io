@@ -54,6 +54,10 @@ ul.posts li {
   list-style: none;
 }
 
-.blurb {
+.blurb, .about {
   clear: right;
+}
+
+.about p {
+  text-indent: 1em;
 }
