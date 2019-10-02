@@ -54,15 +54,6 @@ ul.posts li {
   list-style: none;
 }
 
-.blurb, #about {
+.blurb {
   clear: right;
-}
-
-#about p {
-  font-size: 1em;
-  font-family: Helvetica;
-  text-indent: 1em;
-  color: black;
-  line-height: 1.5em;
-  text-align: justify;
 }
